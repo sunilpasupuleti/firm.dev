@@ -17,17 +17,22 @@ $(document).ready(() => {
 
   if (navToggle) {
     navToggle.addEventListener("click", () => {
-      $(".nav__logo img").css("transform", "rotate(270deg)");
-      setTimeout(() => {
-        navMenu.classList.add("show-menu");
-      }, 1000);
+      $(".nav__logo img").css("transform", "rotate(0deg)");
+      // $(".nav__logo img").css("transform", "rotate(270deg)");
+      // setTimeout(() => {
+      navMenu.classList.add("show-menu");
+      // }, 1000);
     });
   }
 
   if (navClose) {
     navClose.addEventListener("click", () => {
-      $(".nav__logo img").css("transform", "rotate(0deg)");
+      // $(".nav__logo img").css("transform", "rotate(0deg)");
+
       navMenu.classList.remove("show-menu");
+      $(".nav__logo img").css("transform", "rotate(270deg)");
+
+      // navMenu.classList.remove("show-menu");
     });
   }
 
@@ -48,10 +53,10 @@ $(document).ready(() => {
   themeButton.addEventListener("click", () => {
     if (presentTheme === "light") {
       presentTheme = "dark";
-      $(".nav__logo img").attr("src", "assets/images/logo_white.png");
+      $(".nav__logo img").attr("src", "assets/images/logo_white.svg");
     } else {
       presentTheme = "light";
-      $(".nav__logo img").attr("src", "assets/images/logo_black.png");
+      $(".nav__logo img").attr("src", "assets/images/logo_black.svg");
     }
     document.body.classList.toggle("dark-theme");
     themeButton.classList.toggle("uil-sun");
@@ -81,7 +86,9 @@ $(document).ready(() => {
     let width = $(window).width();
     if (width < 768) {
       $(this).toggle();
+      $(this).parent().find(".round__line").toggle();
       $(this).parent().find(".wedo__hover__content").toggle();
+      $(this).parent().css({ display: "block" });
     }
   });
 
@@ -89,7 +96,9 @@ $(document).ready(() => {
     let width = $(window).width();
     if (width < 768) {
       $(this).toggle();
+      $(this).parent().find(".round__line").toggle();
       $(this).parent().find(".wedo__titles").toggle();
+      $(this).parent().css({ display: "grid" });
     }
   });
 
