@@ -103,6 +103,11 @@ body {
   overflow-x: hidden;
 }
 
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
 /* img {
   max-width: 100%;
   height: auto;

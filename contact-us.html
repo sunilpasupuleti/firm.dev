@@ -23,7 +23,7 @@
     <!-- =========== CSS ======================= -->
 
     <link rel="stylesheet" href="assets/css/main.css?v=1" />
-    <link rel="stylesheet" href="assets/css/about-us.css?v=1" />
+    <link rel="stylesheet" href="assets/css/contact-us.css?v=1" />
 
     <!-- =========== AOS ======================= -->
 
@@ -45,7 +45,7 @@
               </a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link active-link">
+              <a href="about-us.html" class="nav__link">
                 <i class="uil uil-user nav__icon"></i>About
               </a>
             </li>
@@ -55,7 +55,7 @@
               </a>
             </li>
             <li class="nav__item">
-              <a href="contact-us.html" class="nav__link">
+              <a href="#" class="nav__link active-link">
                 <i class="uil uil-phone-alt nav__icon"></i>Contact
               </a>
             </li>
@@ -74,91 +74,104 @@
       </nav>
     </header>
 
-    <!-- ========================== about us  ============= -->
-
-    <section class="section about__us container">
-      <h2 class="section__title">About us</h2>
-      <img
-        data-aos="zoom-in"
-        class="landing__img"
-        src="https://cdn.mos.cms.futurecdn.net/ZcD9zyBoBHt6ATTFmZHr5B.jpg"
-        alt="image"
-      />
-    </section>
-
-    <!-- ========================== what are ew  ============= -->
-
-    <section class="section container what__are__we">
-      <h2 class="section__title">What are we ?</h2>
+    <section class="section contact__us container">
+      <!-- <h2 class="section__title">Contact us</h2> -->
+      <h1 class="title">Made with love, right here in India</h1>
       <p class="desc">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore placeat,
-        aliquam sunt sequi eligendi reprehenderit iusto qui a, temporibus esse
-        officia autem voluptates ducimus similique pariatur. Sequi pariatur
-        dignissimos expedita. Lorem ipsum dolor sit amet consectetur adipisicing
-        elit. Commodi, iure officiis ea architecto, ullam dolorum quidem error
-        explicabo aspernatur, aliquam amet velit doloremque quasi nobis aperiam
-        consequatur labore sunt corrupti?
+        Bengaluru remains the top start up hub with a well-developed exosystem,
+        deep technology talent, and a culture of enterpreneurship.
         <br />
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore placeat,
-        aliquam sunt sequi eligendi reprehenderit iusto qui a, temporibus esse
-        officia autem voluptates ducimus similique pariatur. Sequi pariatur
-        dignissimos expedita. Lorem ipsum dolor sit amet consectetur adipisicing
-        elit. Commodi, iure officiis ea architecto, ullam dolorum quidem error
-        explicabo aspernatur, aliquam amet velit doloremque quasi nobis aperiam
-        consequatur labore sunt corrupti?
+        Come visit us to be a part of our young and energetic team right here in
+        Bangalore!
       </p>
     </section>
 
-    <section class="section container what__we__build">
-      <div class="we__build" data-aos="fade-in">
-        <h3>Future Scope</h3>
-        <div class="we__build__content">
-          <img
-            src="https://cdn.mos.cms.futurecdn.net/ZcD9zyBoBHt6ATTFmZHr5B.jpg"
-            alt="image"
-          />
-          <p class="desc">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
-            accusamus reiciendis expedita vel in exercitationem, illo nostrum
-            error molestiae possimus ipsum unde dicta saepe, necessitatibus
-            accusantium qui odit fugiat voluptatem.
-          </p>
-        </div>
-      </div>
+    <!-- ========================== contact us  ============= -->
 
-      <div class="we__build" data-aos="fade-in">
-        <h3>Ethics</h3>
-        <div class="we__build__content">
-          <img
-            src="https://cdn.mos.cms.futurecdn.net/ZcD9zyBoBHt6ATTFmZHr5B.jpg"
-            alt="image"
-          />
-          <p class="desc">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
-            accusamus reiciendis expedita vel in exercitationem, illo nostrum
-            error molestiae possimus ipsum unde dicta saepe, necessitatibus
-            accusantium qui odit fugiat voluptatem.
-          </p>
-        </div>
-      </div>
+    <section class="contact__form container">
+      <div>
+        <h1>Reach out to us!</h1>
+        <p>
+          Got a question about Lander? Are you interested in partnering with us?
+          Have some suggestions or just want to say hi? Contactus.
+        </p>
 
-      <div class="we__build" data-aos="fade-in">
-        <h3>Team Work</h3>
-        <div class="we__build__content">
-          <img
-            src="https://cdn.mos.cms.futurecdn.net/ZcD9zyBoBHt6ATTFmZHr5B.jpg"
-            alt="image"
-          />
-          <p class="desc">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
-            accusamus reiciendis expedita vel in exercitationem, illo nostrum
-            error molestiae possimus ipsum unde dicta saepe, necessitatibus
-            accusantium qui odit fugiat voluptatem.
-          </p>
-        </div>
+        <br />
+        <form action="#">
+          <div class="error-message" id="err-msg">eorr</div>
+
+          <div class="success-message" id="suc-msg">success</div>
+          <br />
+          <div class="grid">
+            <div class="contact__content">
+              <label for="firstName" class="contact__label">First Name</label>
+              <input
+                name="firstName"
+                type="text"
+                required
+                class="contact__input"
+              />
+            </div>
+
+            <div class="contact__content">
+              <label for="lastName" class="contact__label">Last Name</label>
+              <input
+                name="lastName"
+                type="text"
+                required
+                class="contact__input"
+              />
+            </div>
+          </div>
+          <br />
+          <div class="contact__inputs grid">
+            <div class="contact__content">
+              <label for="email" class="contact__label">Email Address</label>
+              <input
+                name="email"
+                type="email"
+                required
+                class="contact__input"
+              />
+            </div>
+
+            <div class="contact__content">
+              <label for="phone" class="contact__label">Phone Number</label>
+              <input name="phone" type="tel" class="contact__input" />
+            </div>
+          </div>
+          <br />
+          <div class="contact__content">
+            <label for="" class="contact__label">Message</label>
+            <textarea
+              name="message"
+              id=""
+              class="contact__input"
+              cols="0"
+              rows="7"
+            ></textarea>
+          </div>
+          <br />
+          <div class="ml-auto">
+            <button type="submit" class="button button--flex send-btn">
+              <span id="sending-text">Send Message</span>
+              <i
+                id="send-message-icon"
+                class="uil uil-message button__icon"
+              ></i>
+            </button>
+          </div>
+        </form>
+      </div>
+      <div>
+        <img
+          src="https://cdn.dribbble.com/users/1484145/screenshots/14190807/contact_us_4x.png"
+          alt="contact us illustration"
+        />
       </div>
     </section>
-
+    <br />
+    <br /><br />
     <!-- ========================== footer  ============= -->
 
     <footer class="footer">
@@ -203,7 +216,7 @@
               </li>
 
               <li>
-                <a href="#" class="footer__link">About</a>
+                <a href="about-us.html" class="footer__link">About</a>
               </li>
 
               <li>
@@ -211,7 +224,7 @@
               </li>
 
               <li>
-                <a href="contact-us.html" class="footer__link">Contact</a>
+                <a href="#" class="footer__link">Contact</a>
               </li>
             </ul>
           </div>

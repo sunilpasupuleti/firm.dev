@@ -55,7 +55,11 @@
 }
 
 @media screen and (max-width: 768px) {
-  .we__build__content {
-    flex-direction: column;
+  .what__we__build .we__build__content {
+    display: block;
+  }
+
+  .we__build__content .desc {
+    margin-top: 1rem;
   }
 }

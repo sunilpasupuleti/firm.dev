@@ -1,0 +1,116 @@
+.contact__us {
+  margin-top: 60px;
+}
+
+.contact__us .title {
+  margin-top: 30px;
+  font-size: 2rem;
+}
+
+.contact__us .desc {
+  color: var(--first-color);
+}
+
+.contact__form {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.contact__form p {
+  color: var(--first-color);
+}
+
+.contact__form img {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+}
+
+.contact__content {
+  background-color: whitesmoke;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem 0.25rem;
+}
+
+.contact__label {
+  font-size: var(--smaller-font-size);
+  color: var(--text-color);
+}
+
+.ml-auto {
+  display: flex;
+  justify-content: end;
+}
+
+.send-btn {
+  outline: none !important;
+  border: none !important;
+  cursor: pointer;
+  color: #fff;
+  background-color: #000;
+}
+
+.send-btn:hover {
+  background-color: #272727;
+  transition: 0.3s;
+}
+
+.contact__input {
+  width: 100%;
+  background-color: whitesmoke;
+  color: var(--text-color);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  outline: none;
+  border: none;
+  padding: 0.25rem 0.5rem 0.5rem 0;
+}
+
+body.dark-theme .contact__content,
+body.dark-theme .contact__input {
+  background-color: #404040;
+}
+
+.contact__inputs {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.error-message,
+.success-message {
+  background-color: rgb(207, 89, 89);
+  padding: 0.9rem;
+  font-weight: var(--font-semi-bold);
+  color: #fff;
+  border-radius: 0.5rem;
+  transition: 0.6s;
+  display: none;
+}
+
+.success-message {
+  background-color: rgb(71, 138, 71);
+}
+
+.error-message.show,
+.success-message.show {
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .contact__us .title {
+    font-size: 1.5rem;
+  }
+
+  .contact__form {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .contact__form img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+  }
+}

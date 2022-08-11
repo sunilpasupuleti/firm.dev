@@ -1,8 +1,7 @@
 $(document).ready(() => {
   AOS.init({
     duration: 2000,
-    once: false,
-    mirror: true,
+    once: true,
   });
 
   $(".nav__logo img").css("transform", "rotate(270deg)");
@@ -14,6 +13,10 @@ $(document).ready(() => {
   const navMenu = document.getElementById("nav-menu"),
     navToggle = document.getElementById("nav-toggle"),
     navClose = document.getElementById("nav-close");
+
+  document.addEventListener("scroll", () => {
+    $(".nav__logo img").css("transform", "rotate(0deg)");
+  });
 
   if (navToggle) {
     navToggle.addEventListener("click", () => {
