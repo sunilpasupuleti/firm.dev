@@ -9,6 +9,11 @@
   border-radius: 10px;
   filter: grayscale(100%);
   object-fit: cover;
+  color: pointer;
+}
+
+.about__us .landing__img:hover {
+  filter: none;
 }
 
 .what__are__we .section__title {
@@ -52,6 +57,12 @@
   height: 200x;
   border-radius: 5px;
   object-fit: cover;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.we__build img:hover {
+  filter: none;
 }
 
 @media screen and (max-width: 768px) {
