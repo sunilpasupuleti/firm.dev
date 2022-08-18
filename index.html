@@ -484,9 +484,28 @@
             <br />
             <br />
             <div class="subscribe__container">
-              <input type="email" required placeholder="Enter your email" />
-              <span class="subscribe__button">SUBSCRIBE</span>
+              <input
+                type="email"
+                id="subscribe-email"
+                required
+                placeholder="Enter your email"
+              />
+              <span
+                id="subscribing-button"
+                style="display: none"
+                class="subscribe__button"
+                >Please Wait...</span
+              >
+              <span
+                onclick="onSubscribe()"
+                id="subscribe-button"
+                class="subscribe__button"
+                >SUBSCRIBE</span
+              >
             </div>
+            <br />
+            <div class="error-message" id="sub-err-msg"></div>
+            <div class="success-message" id="sub-suc-msg"></div>
           </div>
         </div>
 
@@ -516,5 +535,8 @@
 
     <!-- ============== MAIN JS ========== -->
     <script src="assets/js/main.js?v=1"></script>
+
+    <!-- ============== SEND IN BLUE JS ========== -->
+    <script src="assets/js/sendinblue.js?v=1"></script>
   </body>
 </html>

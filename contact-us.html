@@ -97,10 +97,10 @@
         </p>
 
         <br />
-        <form action="#">
-          <div class="error-message" id="err-msg">eorr</div>
+        <form id="contact-form" method="post" onsubmit="onContact(event)">
+          <div class="error-message" id="err-msg"></div>
 
-          <div class="success-message" id="suc-msg">success</div>
+          <div class="success-message" id="suc-msg"></div>
           <br />
           <div class="grid">
             <div class="contact__content">
@@ -137,13 +137,14 @@
 
             <div class="contact__content">
               <label for="phone" class="contact__label">Phone Number</label>
-              <input name="phone" type="tel" class="contact__input" />
+              <input name="phone" type="tel" required class="contact__input" />
             </div>
           </div>
           <br />
           <div class="contact__content">
             <label for="" class="contact__label">Message</label>
             <textarea
+              required
               name="message"
               id=""
               class="contact__input"
@@ -153,8 +154,25 @@
           </div>
           <br />
           <div class="ml-auto">
-            <button type="submit" class="button button--flex send-btn">
+            <button
+              id="send-button"
+              type="submit"
+              class="button button--flex send-btn"
+            >
               <span id="sending-text">Send Message</span>
+              <i
+                id="send-message-icon"
+                class="uil uil-message button__icon"
+              ></i>
+            </button>
+
+            <button
+              id="sending-button"
+              type="button"
+              class="button button--flex send-btn"
+              style="display: none"
+            >
+              <span id="sending-text">Sending...</span>
               <i
                 id="send-message-icon"
                 class="uil uil-message button__icon"
@@ -266,9 +284,28 @@
             <br />
             <br />
             <div class="subscribe__container">
-              <input type="email" required placeholder="Enter your email" />
-              <span class="subscribe__button">SUBSCRIBE</span>
+              <input
+                type="email"
+                id="subscribe-email"
+                required
+                placeholder="Enter your email"
+              />
+              <span
+                id="subscribing-button"
+                style="display: none"
+                class="subscribe__button"
+                >Please Wait...</span
+              >
+              <span
+                onclick="onSubscribe()"
+                id="subscribe-button"
+                class="subscribe__button"
+                >SUBSCRIBE</span
+              >
             </div>
+            <br />
+            <div class="error-message" id="sub-err-msg"></div>
+            <div class="success-message" id="sub-suc-msg"></div>
           </div>
         </div>
 
@@ -298,5 +335,8 @@
 
     <!-- ============== MAIN JS ========== -->
     <script src="assets/js/main.js?v=1"></script>
+
+    <!-- ============== SEND IN BLUE JS ========== -->
+    <script src="assets/js/sendinblue.js?v=1"></script>
   </body>
 </html>
