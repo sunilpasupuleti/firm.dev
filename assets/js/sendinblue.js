@@ -1,5 +1,5 @@
 let api_key =
-  "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";
+  "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";
 async function onContact(e) {
   e.preventDefault();
   var form = $("#contact-form");
@@ -48,17 +48,17 @@ async function onContact(e) {
   let postData = {
     sender: {
       name: "FIRM.DEV",
-      email: "hello@firm.dev",
+      email: "hello@thefirm.dev",
     },
     to: [
       {
-        email: "hello@firm.dev",
+        email: "hello@thefirm.dev",
         name: "FIRM.DEV",
       },
     ],
     subject: "Contact Form",
     replyTo: {
-      email: "hello@firm.dev",
+      email: "hello@thefirm.dev",
       name: "FIRM.DEV",
     },
     htmlContent: `<strong>First Name</strong> : ${obj.firstName}
@@ -198,3 +198,5 @@ async function onSubscribe() {
     }, 5000);
   }
 }
+
+process;

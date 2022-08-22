@@ -79,7 +79,7 @@ $(document).ready(() => {
     function (e) {
       let width = $(window).width();
       if (width > 768) {
-        $(this).parent().find(".wedo__hover__content").fadeOut();
+        $(this).parent().find(".wedo__hover__content").hide();
       }
     }
   );

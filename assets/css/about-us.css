@@ -38,13 +38,14 @@
   margin-top: 1.5rem;
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 3rem;
 }
 
 .we__build__content .desc {
   color: #aaa;
   font-size: var(--small-font-size);
   font-weight: normal;
+  line-height: 1.7;
 }
 
 .we__build:nth-child(even) .we__build__content {
@@ -53,7 +54,7 @@
 
 .we__build img {
   filter: grayscale(100%);
-  width: 300px;
+  width: 200px;
   height: 200x;
   border-radius: 5px;
   object-fit: cover;
