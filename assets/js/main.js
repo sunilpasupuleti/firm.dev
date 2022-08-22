@@ -54,6 +54,7 @@ $(document).ready(() => {
 
   let presentTheme = "light";
   themeButton.addEventListener("click", () => {
+    console.log("clicked");
     if (presentTheme === "light") {
       presentTheme = "dark";
       $(".nav__logo img").attr("src", "assets/images/logo_white.svg");
