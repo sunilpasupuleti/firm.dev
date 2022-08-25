@@ -53,7 +53,7 @@
   height: 100%;
   width: 100%;
   filter: grayscale(100%);
-  object-fit: cover;
+  object-fit: contain;
   border-radius: 10px;
 }
 
@@ -124,7 +124,7 @@
 
 .work__gallery img {
   width: 100%;
-  object-fit: cover;
+  object-fit: contain;
   height: 100%;
   border-radius: 10px;
   filter: grayscale(100%);

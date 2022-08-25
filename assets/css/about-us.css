@@ -8,7 +8,7 @@
   height: 300px;
   border-radius: 10px;
   filter: grayscale(100%);
-  object-fit: cover;
+  object-fit: contain;
   color: pointer;
 }
 

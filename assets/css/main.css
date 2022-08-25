@@ -142,6 +142,7 @@ a {
   display: block;
   font-size: var(--small-font-size);
   margin-bottom: var(--mb-3);
+  padding: 0rem 1rem;
   color: #aaa;
 }
 
@@ -424,6 +425,7 @@ body.dark-theme .nav__logo img {
 
 .home__img {
   width: 320px;
+  margin-top: 100px;
 }
 
 .home__contact__button {
@@ -585,9 +587,13 @@ body.dark-theme .home__contact__button {
   row-gap: 3.5rem;
 }
 
+.footer__container .title {
+  color: #fff;
+}
+
 .footer__bg {
   background-color: #292929;
-  padding: 2rem 0 3rem;
+  padding: 2rem 0 0.9rem;
 }
 
 .footer__subtitle {
@@ -598,7 +604,7 @@ body.dark-theme .home__contact__button {
   display: flex;
   flex-direction: column;
   margin-top: 20px;
-  row-gap: 0.7rem;
+  row-gap: 0.4rem;
 }
 
 .footer__links.contact__info .footer__link {
@@ -626,7 +632,7 @@ body.dark-theme .home__contact__button {
   font-size: var(--smaller-font-size);
   text-align: center;
   color: var(--first-color);
-  margin-top: var(--mb-1);
+  margin-top: var(--mb-0-5);
 }
 
 .footer .policies {
@@ -827,15 +833,19 @@ body.dark-theme .home__contact__button {
 
   .home__container {
     row-gap: 5rem;
-    min-height: 80vh;
+    min-height: 65vh !important;
   }
   .home__content {
     padding-top: 5.5rem;
     column-gap: 2rem;
+    position: relative;
   }
 
   .home__img {
-    width: 570px;
+    width: 470px;
+    position: absolute;
+    right: 0px;
+    top: 20px;
   }
 
   .home__scroll {
