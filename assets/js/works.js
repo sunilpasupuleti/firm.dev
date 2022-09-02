@@ -36,10 +36,17 @@ function generateProject(data) {
           <h2>Title : <span>${title}</span></h2>
           <br />
           <div class="links">
-            <h2>Links :</h2>
-            <div class="hyperlinks">
-             ${anchorTags}
-            </div>
+           
+             ${
+               anchorTags
+                 ? `
+             <h2>Links :</h2>
+             <div class="hyperlinks">
+                  ${anchorTags}
+             </div>
+             `
+                 : ""
+             }
           </div>
         </div>
       </div>

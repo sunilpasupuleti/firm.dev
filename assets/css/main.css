@@ -441,8 +441,8 @@ body.dark-theme .home__contact__button {
 
 .wedo__data {
   display: grid;
-  grid-template-columns: 1fr max-content 1fr;
-  column-gap: 1.5rem;
+  grid-template-columns: 1fr 0.5fr 0.5fr;
+  /* column-gap: 1.5rem; */
   position: relative;
 }
 .wedo__hover__content {
@@ -605,6 +605,10 @@ body.dark-theme .home__contact__button {
   flex-direction: column;
   margin-top: 20px;
   row-gap: 0.4rem;
+}
+
+.footer__links.first {
+  margin-left: 10px;
 }
 
 .footer__links.contact__info .footer__link {
