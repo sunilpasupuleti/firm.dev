@@ -1,17 +1,19 @@
 [
   {
+    "id": "p1",
     "heading": "Project - 1",
     "title": "PCB designing, Manufacturing & Assembly",
     "links": [],
     "description": "Our clients may rely on us for schematic and circuit design and development services. Many printed circuit boards (PCBs) for a range of applications, including ed-tech, consumer electronics, and automation, have been specifically designed and tested by our electrical design experts. We not just design the PCB, we also manufacture, assemble and test the PCB at higher quantities.",
     "images": [
-      "https://images.pexels.com/photos/5905741/pexels-photo-5905741.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
-      "https://images.pexels.com/photos/5331199/pexels-photo-5331199.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      "https://images.pexels.com/photos/6001403/pexels-photo-6001403.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      "https://images.pexels.com/photos/6001403/pexels-photo-6001403.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+      "assets/images/works/PCB design and manufacturing/1.JPG",
+      "assets/images/works/PCB design and manufacturing/2.JPG",
+      "assets/images/works/PCB design and manufacturing/3.JPG",
+      "assets/images/works/PCB design and manufacturing/4.JPG"
     ]
   },
   {
+    "id": "p2",
     "heading": "Project - 2",
     "title": "Firmware Development",
     "links": [
@@ -30,15 +32,15 @@
     ],
     "description": "As more devices become powerful IoT products for a variety of applications, just a normal product idea without any intelligence would be no interest to many consumers. We are to help to transition your simple product idea into intelligence product with our talented engineers with expertise on various microcontroller including STM32, Nordic, AVR, PIC, etc. Also skilled at embedded Linux to get your prototype in no time.",
     "images": [
-      "assets/images/home/landing.png",
-      "https://images.pexels.com/photos/5905741/pexels-photo-5905741.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
-      "https://images.pexels.com/photos/5331199/pexels-photo-5331199.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      "https://images.pexels.com/photos/6001403/pexels-photo-6001403.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      "https://images.pexels.com/photos/6282028/pexels-photo-6282028.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+      "assets/images/works/Firmware development/1.png",
+      "assets/images/works/Firmware development/2.jpg",
+      "assets/images/works/Firmware development/3.png",
+      "assets/images/works/Firmware development/4.jpg"
     ]
   },
 
   {
+    "id": "p3",
     "heading": "Project - 3",
     "title": " CAD design and 3d printing",
     "links": [
@@ -57,14 +59,16 @@
     ],
     "description": "We also deal with Mechanical Engineering and designing to give our clients complete end to end solution for building product prototype without any hustle. Our Engineering Solutions are tailored as per the requirement of a client that can be company or individual's needs. We offer a wide range of engineering services such as drawing, machine design, and CAD based services, with our amazing engineering we enable the clients to optimize their engineering process at affordable costs that take a shorter project timeline.",
     "images": [
-      "https://images.pexels.com/photos/5905741/pexels-photo-5905741.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
-      "https://images.pexels.com/photos/5331199/pexels-photo-5331199.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      "https://images.pexels.com/photos/6001403/pexels-photo-6001403.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      "https://images.pexels.com/photos/6282028/pexels-photo-6282028.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+      "assets/images/works/CAD Design and 3d printing/1.JPG",
+      "assets/images/works/CAD Design and 3d printing/2.png",
+      "assets/images/works/CAD Design and 3d printing/3.png",
+      "assets/images/works/CAD Design and 3d printing/4.png",
+      "assets/images/works/CAD Design and 3d printing/5.jpg"
     ]
   },
 
   {
+    "id": "p4",
     "heading": "Project - 4",
     "title": " IEEE Project Assistance",
     "links": [
@@ -83,13 +87,14 @@
     ],
     "description": "Best place to find latest project are journals and publication, but sometimes the language and the content of the paper might be too complex for students who like to implement them. That’s where we play an important role in assisting students (Bachelors, Master, PHD) in implementing IEEE or any journal concept into a full fledge project. Also, students can join our referral program to gain more knowledge as well as communication skill by working on various different project.",
     "images": [
-      "https://images.pexels.com/photos/5905741/pexels-photo-5905741.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
-      "https://images.pexels.com/photos/5331199/pexels-photo-5331199.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      "https://images.pexels.com/photos/6001403/pexels-photo-6001403.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      "https://images.pexels.com/photos/6282028/pexels-photo-6282028.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+      "assets/images/works/IEEE project Assistance/1.jpg",
+      "assets/images/works/IEEE project Assistance/2.jpg",
+      "assets/images/works/IEEE project Assistance/3.jpg",
+      "assets/images/works/IEEE project Assistance/4.jpg"
     ]
   },
   {
+    "id": "p5",
     "heading": "Project - 5",
     "title": " PCB cupid",
     "links": [
@@ -108,13 +113,13 @@
     ],
     "description": "We are building an amazing community with PCB CUPID. This is your Dexter’s Laboratory to learn, share and connect with professionals and like-minded people, all in the same space. this platform works as an aggregator bridging the gap by bringing in all kinds of knowledge pool (beginners, amateur and experts) to connect with each other within a single frame, on other hand this acts as a learner’s guide by bringing in customised content, videos, graphics and a medium to engage over grilling topics uploaded periodically.",
     "images": [
-      "https://images.pexels.com/photos/5905741/pexels-photo-5905741.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
-      "https://images.pexels.com/photos/5331199/pexels-photo-5331199.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      "https://images.pexels.com/photos/6001403/pexels-photo-6001403.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      "https://images.pexels.com/photos/6282028/pexels-photo-6282028.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+      "assets/images/works/Pcbcupid/1.png",
+      "assets/images/works/Pcbcupid/2.png",
+      "assets/images/works/Pcbcupid/3.png"
     ]
   },
   {
+    "id": "p6",
     "heading": "Project - 6",
     "title": "Automatic Hand Sanitizer Dispenser",
     "links": [
@@ -125,13 +130,14 @@
     ],
     "description": "Hand sanitization is the most effective approach to keep disease-causing bacteria at bay. Soaps and manual hand soap dispensers have traditionally been used to sterilise and clean our hands. The key advantage of our design allows us to create a variety of automated dispensers within a small period of time in a very budget friendly way. You can contact us for more detail about this product.",
     "images": [
-      "https://images.pexels.com/photos/5905741/pexels-photo-5905741.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
-      "https://images.pexels.com/photos/5331199/pexels-photo-5331199.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      "https://images.pexels.com/photos/6001403/pexels-photo-6001403.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      "https://images.pexels.com/photos/6282028/pexels-photo-6282028.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+      "assets/images/works/Automatic hand sanitizer dispenser/1.jpg",
+      "assets/images/works/Automatic hand sanitizer dispenser/2.png",
+      "assets/images/works/Automatic hand sanitizer dispenser/3.png",
+      "assets/images/works/Automatic hand sanitizer dispenser/4.jpeg"
     ]
   },
   {
+    "id": "p7",
     "heading": "Project - 7",
     "title": "Waitlessbuzz",
     "links": [
@@ -146,10 +152,11 @@
     ],
     "description": "We are happy to work with Waitlessbuzz team to create a leading edge IoT device, with some amazing features. Also, glad to provide assistance in every stage from Circuit designing, PCB design PCB manufacturing and 3d printed. This product will definitely be a game changer for many hospitals and gateways where the queueing system is required.",
     "images": [
-      "https://images.pexels.com/photos/5905741/pexels-photo-5905741.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
-      "https://images.pexels.com/photos/5331199/pexels-photo-5331199.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      "https://images.pexels.com/photos/6001403/pexels-photo-6001403.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      "https://images.pexels.com/photos/6282028/pexels-photo-6282028.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+      "assets/images/works/WaitlessBuzz/1.png",
+      "assets/images/works/WaitlessBuzz/2.jpg",
+      "assets/images/works/WaitlessBuzz/3.JPG",
+      "assets/images/works/WaitlessBuzz/4.JPG",
+      "assets/images/works/WaitlessBuzz/5.JPG"
     ]
   }
 ]

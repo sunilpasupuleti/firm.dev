@@ -1,5 +1,7 @@
 let works = [];
 
+let remainingWorks = [];
+
 function generateProject(data) {
   let container = $(".works");
   let { title, heading, images, description, links } = data;
@@ -48,11 +50,12 @@ function generateProject(data) {
                  : ""
              }
           </div>
+          <p class="desc">
+          ${description}
+          </p>
         </div>
       </div>
-      <p class="desc">
-        ${description}
-      </p>
+    
     </div>
     `;
 
@@ -71,11 +74,11 @@ function generateProject(data) {
   });
 }
 
-function generateMoreProjects(data) {
+function generateMoreProjects() {
   let container = $(".works__gallery__container");
   let galleries = "";
-  data.forEach((w, i) => {
-    galleries += ` <div class="work__gallery" onclick="onChangProject('${i}')">
+  remainingWorks.forEach((w, i) => {
+    galleries += ` <div class="work__gallery" onclick="onChangProject('${w.id}')">
       <div class="hover__content">
         <h1>${w.title}</h1>
       </div>
@@ -97,18 +100,19 @@ function generateMoreProjects(data) {
   container.append(content);
 }
 
-function onChangProject(changedIndex) {
+function onChangProject(changedId) {
   $(".works").empty();
   $(".works__gallery__container").empty();
-  let remainingProjects = [];
+  remainingWorks = [];
   works.filter((work, i) => {
-    if (i !== Number(changedIndex) + 1) {
-      remainingProjects.push(work);
+    if (work.id !== changedId) {
+      remainingWorks.push(work);
     }
   });
-  console.log(remainingProjects);
-  generateProject(works[Number(changedIndex) + 1]);
-  generateMoreProjects(remainingProjects);
+
+  let work = works.filter((work) => work.id === changedId)[0];
+  generateProject(work);
+  generateMoreProjects();
   $(window).scrollTop(0);
 }
 
@@ -116,12 +120,11 @@ function createWorks() {
   fetch("assets/works.json")
     .then((response) => response.json())
     .then((json) => {
-      console.log(json);
       works = json;
       let presentIndex = 0;
-      let remainingProjects = json.slice(presentIndex + 1);
+      remainingWorks = json.slice(presentIndex + 1);
       generateProject(json[0]);
-      generateMoreProjects(remainingProjects);
+      generateMoreProjects();
     });
 }
 
